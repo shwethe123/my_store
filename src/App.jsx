@@ -20,6 +20,7 @@ import ShoppingCart from './components/cart/ShoppingCart';
 import { ShoppingCartOutlined } from '@ant-design/icons';
 import Categories from './components/categories/Categories';
 import { AppstoreOutlined } from '@ant-design/icons';
+import OrderList from './components/orders/OrderList';
 
 function App() {
   const [collapsed, setCollapsed] = useState(false);
@@ -94,6 +95,8 @@ function App() {
             </Row>
           </>
         );
+      case '2': // Products
+        return <OrderList />;
       case '5': // Products
         return <ProductList />;
       case '6': // Login
